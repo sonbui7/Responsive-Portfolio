@@ -1,0 +1,198 @@
+#name{
+    color: white;
+    background-color: #4aaaa5;
+    border: 2px solid #4aaaa5;
+    font-size: 32px;
+    margin-left: 150px;
+    float: left;
+    padding: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#about, #portfolio{
+    color: grey;
+    float: right;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#contact{
+    color: grey;
+    float: right;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right: 100px;
+}
+
+header > h2{
+    margin-top: 30px;
+    float: right;
+    padding-left: 20px;
+}
+#top{
+    border-bottom: 2px solid grey;
+    background-color: white;
+}
+
+#top::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#body{
+    margin: 50px 150px 50px 150px;
+    border: 5px solid #4aaaa5;
+    background-color: white;
+    padding: 20px;
+    line-height: 50px;
+    height: 700px;
+}   
+
+#aboutme{
+    padding-top: 20px;
+    font-size: 32px;
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 20px;
+    color: #4aaaa5;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    padding-top: 20px;
+    line-height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bottom{
+    color: white;
+    text-align: center;
+    background-color: grey;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #4aaaa5;
+}
+
+img{
+    float: left;
+    width: 400px;
+    padding-right: 10px;
+    padding-top: 25px;
+}
+
+/*Portfolio*/
+
+
+.text1, .text2, .text3, .text4, .text5{
+    position: relative;
+}
+
+.imgtext1, .imgtext2, .imgtext3, .imgtext4, .imgtext5{
+    position: absolute;
+    background-color: #4aaaa5;
+    color: white;
+    text-align: center;
+    width: 33.55%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+.imgtext1{
+    top: 165px;
+    left: 0;
+}
+
+.imgtext2{
+    top: 165px;
+    left: 410px;
+}
+
+.imgtext3{
+    top: 390px;
+    left: 0;
+}
+
+.imgtext4{
+    top: 390px;
+    left: 410px;
+}
+
+.imgtext5{
+    top: 615px;
+    left: 0;
+}
+
+
+/* Contact*/
+
+form{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 25px;
+}
+
+#butt{
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border: 1px solid white;
+}
+
+/*Media Query*/
+
+
+@media screen and (max-width: 980px){
+    #name{
+        margin-left: 50px;
+    }
+    #body{
+        margin-left: 50px;
+        width: 60%;
+        height: 70%
+    }
+    .bottom{
+
+    }
+}
+
+@media screen and (max-width: 768px){
+    #name{
+        margin-left: 30px;
+    }
+    #body{
+        width: 85%;
+        margin-left: 30px;
+    }
+    .bottom{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+    #name{
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #body{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+/* I need to still be able to fix the photos, I know I have to redo my code
+in order to do so, my subtitles are out of place and I need to be able to
+fix and center them. My textbox sizes are slightly off as well as the left
+and right spacing on the body texts. I was planning to fix the pictures by
+not making them static, but move as the textboxes changes sizes. I have to
+also figure out how to center my subtitles as well as extend the background
+box with it. */
